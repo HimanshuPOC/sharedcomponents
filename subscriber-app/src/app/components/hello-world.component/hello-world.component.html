@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="title" >
+    <h1>
+      Welcome {{ UserName }}!
+    </h1>
+  </div>
+  <p>Shared component</p>
+
+  
+  <input [(ngModel)]="updatedValue">
+  <button (click)="onTextUpdate()">Update</button>
+<!-- <template #sharedcomponent></template> -->
+<shared-component-control appName="SampleApplication" componentName="democomponent" [componentInputs]='sharedComponentInputs' ></shared-component-control>
+
+
+  
