@@ -1,0 +1,1 @@
+{"Id":"c23ee73c78d3","CommonIdentity":"41CAF2EB","ConfigurationServicePort":"5002","FxpUIPort":"5000","ApplicationPort":"5003","ScriptsToBeDeployed":["routes.bundle.js"],"CSSToBedeployed":[],"PackageUpdateCheckInterval":3600000,"WebPackConfigPath":"./webpack.config.hot.js","EntryStylesheetFile":"","ProjectFramework":"Angular"}
