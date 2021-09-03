@@ -13,6 +13,15 @@ gulp.task('set-prod-node-env', function (callBack) {
 	callBack();
 });
 
+gulp.task('set-external-component-build', function(callBack){
+	process.env.BUILD_TYPE = 'EXTERNAL'; 
+	callBack();
+});
+
+// gulp.task('set-fxp-component-build', function(callBack){
+// 	process.env.BUILD_TYPE = 'FXP'; 
+// 	callBack();
+// });
 
 gulp.task("buildAOTUglified", gulp.series('set-prod-node-env', getProductionWebpack, function (callBack) {
 	callBack();
@@ -31,6 +40,14 @@ gulp.task("builddev", gulp.series('buildJITNonUglified', getNonProductionWebpack
 });
 
 gulp.task("buildprod", gulp.series('buildAOTUglified', getNonProductionWebpack), function (callBack) {
+	callBack();
+});
+
+gulp.task("buildExternal", gulp.series('set-external-component-build', 'buildAOTNonUglified', getNonProductionWebpack), function (callBack) {
+	callBack();
+});
+
+gulp.task("buildExternalProd", gulp.series('set-external-component-build', 'buildAOTUglified', getNonProductionWebpack), function (callBack) {
 	callBack();
 });
 

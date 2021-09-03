@@ -5,7 +5,7 @@ import { UserProfileService } from '@fxp/fxpservices';
 @Component({
   selector: 'fxpwebcomponent',
   templateUrl: './fxp-webcomponent.html',
-  styleUrls: ['./fxp-webcomponent.css']
+  styleUrls: ['./fxp-webcomponent.scss']
 })
 export class FxpWebComponent implements OnInit {
 

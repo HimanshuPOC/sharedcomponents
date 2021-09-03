@@ -17,7 +17,8 @@ generatedBundle: '7da7a74415a7-SharedComponentModule-Bundle',
       return {
         components: [helloWorldSharedComp],
         disableSharing: false,
-        sharedBundles: []
+        sharedBundles: [],
+        appName: "PublisherApp"
       }
     }
     getRoutes(fxpContext: IFxpAppContext): IRouteInfo {
@@ -101,4 +102,4 @@ let baseUrl = currentScriptUrl.substring(0, currentScriptUrl.lastIndexOf('/'));
 }
 }
 
-PartnerAppRegistrationService.registerLazyLoadedApp(SampleApplication_routes, 'SampleApplication');
+PartnerAppRegistrationService.registerLazyLoadedApp(SampleApplication_routes, 'PublisherApp');

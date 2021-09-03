@@ -21,7 +21,8 @@ export class SampleApplication implements IAppService {
       return {
         components: [helloWorldSharedComp],
         disableSharing: false,
-        sharedBundles: []
+        sharedBundles: [],
+        appName: "PublisherApp"
       }
     }
     getRoutes(fxpContext: IFxpAppContext): IRouteInfo {

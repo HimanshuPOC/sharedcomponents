@@ -15,7 +15,7 @@ import { FxpWebComponent } from '../components/web-component/fxp-webcomponent';
 })
 // Feature Module for bundling the dependencies. All the feature modules needs to be registered in FXP.
 // Please refer main.ts file for the same.
-export class HelloWorldModule {
+export class FxpWebComponentModule {
 
 }
 
